@@ -1,0 +1,220 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* PayApi\
+* PayApi\.classpath
+* PayApi\.project
+* PayApi\AndroidManifest.xml
+* PayApi\ic_launcher-web.png
+* PayApi\jCookie-0.8b.zip
+* PayApi\libs\
+* PayApi\libs\android-support-v4.jar
+* PayApi\proguard-project.txt
+* PayApi\project.properties
+* PayApi\res\
+* PayApi\res\drawable-hdpi\
+* PayApi\res\drawable-hdpi\ic_launcher.png
+* PayApi\res\drawable-mdpi\
+* PayApi\res\drawable-mdpi\ic_launcher.png
+* PayApi\res\drawable-xhdpi\
+* PayApi\res\drawable-xhdpi\ic_launcher.png
+* PayApi\res\drawable-xxhdpi\
+* PayApi\res\drawable-xxhdpi\ic_launcher.png
+* PayApi\res\layout\
+* PayApi\res\layout\activity_main.xml
+* PayApi\res\menu\
+* PayApi\res\menu\main.xml
+* PayApi\res\values-v11\
+* PayApi\res\values-v11\styles.xml
+* PayApi\res\values-v14\
+* PayApi\res\values-v14\styles.xml
+* PayApi\res\values-w820dp\
+* PayApi\res\values-w820dp\dimens.xml
+* PayApi\res\values\
+* PayApi\res\values\dimens.xml
+* PayApi\res\values\strings.xml
+* PayApi\res\values\styles.xml
+* PayApi\src\
+* PayApi\src\com\
+* PayApi\src\com\example\
+* PayApi\src\com\example\payapi\
+* PayApi\src\com\example\payapi\HttpRequestUtil.java
+* PayApi\src\com\example\payapi\MainActivity.java
+* PayApi\src\com\example\payapi\PayApiNotify.java
+* PayApi\src\com\example\payapi\util\
+* PayApi\src\com\example\payapi\util\CookieUtil.java
+* PayApi\src\com\example\payapi\util\MD5Util.java
+* PayApi\src\com\sonalb\
+* PayApi\src\com\sonalb\EnhancedException.java
+* PayApi\src\com\sonalb\EnhancedIOException.java
+* PayApi\src\com\sonalb\EnhancedRuntimeException.java
+* PayApi\src\com\sonalb\IEnhancedException.java
+* PayApi\src\com\sonalb\Utils.java
+* PayApi\src\com\sonalb\jCookieOverview.html
+* PayApi\src\com\sonalb\net\
+* PayApi\src\com\sonalb\net\http\
+* PayApi\src\com\sonalb\net\http\HTTPRedirectHandler.java
+* PayApi\src\com\sonalb\net\http\Header.java
+* PayApi\src\com\sonalb\net\http\HeaderEntry.java
+* PayApi\src\com\sonalb\net\http\HeaderUtils.java
+* PayApi\src\com\sonalb\net\http\cookie\
+* PayApi\src\com\sonalb\net\http\cookie\Client.java
+* PayApi\src\com\sonalb\net\http\cookie\Cookie.java
+* PayApi\src\com\sonalb\net\http\cookie\CookieJar.java
+* PayApi\src\com\sonalb\net\http\cookie\CookieMatcher.java
+* PayApi\src\com\sonalb\net\http\cookie\CookieParser.java
+* PayApi\src\com\sonalb\net\http\cookie\CookieUtils.java
+* PayApi\src\com\sonalb\net\http\cookie\MalformedCookieException.java
+* PayApi\src\com\sonalb\net\http\cookie\RFC2965CookieParser.java
+* PayApi\src\com\sonalb\net\http\cookie\package.html
+* PayApi\src\com\sonalb\net\http\package.html
+* PayApi\src\com\sonalb\package.html
+* ic_launcher-web.png
+* jCookie-0.8b\
+* jCookie-0.8b\jCookie-0.8b\
+* jCookie-0.8b\jCookie-0.8b\INSTALL.TXT
+* jCookie-0.8b\jCookie-0.8b\LICENSE
+* jCookie-0.8b\jCookie-0.8b\README
+* jCookie-0.8b\jCookie-0.8b\classes\
+* jCookie-0.8b\jCookie-0.8b\classes\com\
+* jCookie-0.8b\jCookie-0.8b\classes\com\sonalb\
+* jCookie-0.8b\jCookie-0.8b\classes\com\sonalb\EnhancedException.class
+* jCookie-0.8b\jCookie-0.8b\classes\com\sonalb\EnhancedIOException.class
+* jCookie-0.8b\jCookie-0.8b\classes\com\sonalb\EnhancedRuntimeException.class
+* jCookie-0.8b\jCookie-0.8b\classes\com\sonalb\IEnhancedException.class
+* jCookie-0.8b\jCookie-0.8b\classes\com\sonalb\Utils.class
+* jCookie-0.8b\jCookie-0.8b\classes\com\sonalb\net\
+* jCookie-0.8b\jCookie-0.8b\classes\com\sonalb\net\http\
+* jCookie-0.8b\jCookie-0.8b\classes\com\sonalb\net\http\HTTPRedirectHandler.class
+* jCookie-0.8b\jCookie-0.8b\classes\com\sonalb\net\http\Header.class
+* jCookie-0.8b\jCookie-0.8b\classes\com\sonalb\net\http\HeaderEntry.class
+* jCookie-0.8b\jCookie-0.8b\classes\com\sonalb\net\http\HeaderUtils.class
+* jCookie-0.8b\jCookie-0.8b\classes\com\sonalb\net\http\cookie\
+* jCookie-0.8b\jCookie-0.8b\classes\com\sonalb\net\http\cookie\Client.class
+* jCookie-0.8b\jCookie-0.8b\classes\com\sonalb\net\http\cookie\Cookie.class
+* jCookie-0.8b\jCookie-0.8b\classes\com\sonalb\net\http\cookie\CookieJar.class
+* jCookie-0.8b\jCookie-0.8b\classes\com\sonalb\net\http\cookie\CookieMatcher.class
+* jCookie-0.8b\jCookie-0.8b\classes\com\sonalb\net\http\cookie\CookieParser.class
+* jCookie-0.8b\jCookie-0.8b\classes\com\sonalb\net\http\cookie\CookieUtils.class
+* jCookie-0.8b\jCookie-0.8b\classes\com\sonalb\net\http\cookie\MalformedCookieException.class
+* jCookie-0.8b\jCookie-0.8b\classes\com\sonalb\net\http\cookie\RFC2965CookieParser.class
+* jCookie-0.8b\jCookie-0.8b\docs\
+* jCookie-0.8b\jCookie-0.8b\docs\api\
+* jCookie-0.8b\jCookie-0.8b\docs\api\allclasses-frame.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\EnhancedException.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\EnhancedIOException.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\EnhancedRuntimeException.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\IEnhancedException.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\Utils.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\net\
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\net\http\
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\net\http\HTTPRedirectHandler.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\net\http\Header.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\net\http\HeaderEntry.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\net\http\HeaderUtils.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\net\http\cookie\
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\net\http\cookie\Client.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\net\http\cookie\Cookie.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\net\http\cookie\CookieJar.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\net\http\cookie\CookieMatcher.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\net\http\cookie\CookieParser.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\net\http\cookie\CookieUtils.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\net\http\cookie\MalformedCookieException.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\net\http\cookie\RFC2965CookieParser.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\net\http\cookie\package-frame.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\net\http\cookie\package-summary.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\net\http\cookie\package-tree.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\net\http\package-frame.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\net\http\package-summary.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\net\http\package-tree.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\package-frame.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\package-summary.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\com\sonalb\package-tree.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\deprecated-list.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\help-doc.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\index-all.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\index.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\overview-frame.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\overview-summary.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\overview-tree.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\package-list
+* jCookie-0.8b\jCookie-0.8b\docs\api\packages.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\serialized-form.html
+* jCookie-0.8b\jCookie-0.8b\docs\api\stylesheet.css
+* jCookie-0.8b\jCookie-0.8b\src\
+* jCookie-0.8b\jCookie-0.8b\src\com\
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\EnhancedException.java
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\EnhancedIOException.java
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\EnhancedRuntimeException.java
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\IEnhancedException.java
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\Utils.java
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\jCookieOverview.html
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\net\
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\net\http\
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\net\http\HTTPRedirectHandler.java
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\net\http\Header.java
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\net\http\HeaderEntry.java
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\net\http\HeaderUtils.java
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\net\http\cookie\
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\net\http\cookie\Client.java
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\net\http\cookie\Cookie.java
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\net\http\cookie\CookieJar.java
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\net\http\cookie\CookieMatcher.java
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\net\http\cookie\CookieParser.java
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\net\http\cookie\CookieUtils.java
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\net\http\cookie\MalformedCookieException.java
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\net\http\cookie\RFC2965CookieParser.java
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\net\http\cookie\package.html
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\net\http\package.html
+* jCookie-0.8b\jCookie-0.8b\src\com\sonalb\package.html
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:23.4.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+* src\com\sonalb\jCookieOverview.html => app\src\main\resources\com\sonalb\jCookieOverview.html
+* src\com\sonalb\net\http\cookie\package.html => app\src\main\resources\com\sonalb\net\http\cookie\package.html
+* src\com\sonalb\net\http\package.html => app\src\main\resources\com\sonalb\net\http\package.html
+* src\com\sonalb\package.html => app\src\main\resources\com\sonalb\package.html
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

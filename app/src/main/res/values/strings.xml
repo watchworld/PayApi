@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PayApi</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="account">账号</string>
+    <string name="pass">密码</string>
+    <string name="login">登录</string>
+    <string name="signin">注册</string>
+    <string name="openWeb">打开浏览器</string>
+    <string name="back">返回</string>
+    <string name="signout">注销</string>
+
+</resources>
