@@ -421,6 +421,12 @@ public void onClick(View v) {
     			}
     		}
     	}
+        else if(title.contains("盛付通") || ctitle.contains("盛付通")){
+
+        }
+        else{
+
+        }
         Message hmsg = new Message();
         hmsg.what = 9;
         handlerMsg = msg;

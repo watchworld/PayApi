@@ -41,7 +41,8 @@ import android.util.Log;
 	        super.onCreate();
 	        //activityManager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
 	    }
-	    @Override
+	    @SuppressLint("WrongConstant")
+		@Override
 	    public int onStartCommand(Intent intent, int flags, int startId) {
 	        return super.onStartCommand(intent, START_STICKY, startId);
 	    }
