@@ -424,8 +424,8 @@ public void onClick(View v) {
         else {
             if (pacageName.equals("com.shengpay.pos.merchant")){
                 String price = "0";
-                String before = "收款";
-                if(ctx.contains(yuan) && ctx.contains(before))
+                String before = "支付";
+                if(ctx.contains(yuan) )
                 {
                     try{
                         price = ctx.substring(ctx.indexOf(before)+before.length(), ctx.indexOf(yuan));
