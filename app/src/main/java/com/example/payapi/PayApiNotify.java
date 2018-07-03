@@ -61,10 +61,15 @@ import android.util.Log;
 	 
 	    }
 	    // 有新的通知
+        /*
+            com.android.contacts :短信
+            com.hpbr.bosszhipin :BOSS直聘
+         */
 	    @SuppressWarnings("deprecation")
 		@Override
 	    public void onNotificationPosted(StatusBarNotification sbn) {
-	        Log.e("notify", "get notify");
+            String pacageName=sbn.getPackageName();
+	        Log.e("notify", "get notify,"+pacageName);
 	        Notification n = sbn.getNotification();
 	        if (n == null) {
 	            return;
@@ -106,9 +111,11 @@ import android.util.Log;
 	        if (contentSubtext == null) {
 	            contentSubtext = "";
 	        }
+
 	        Log.d("notify", "notify msg: title=" + title + " ,when=" + when
 	                + " ,contentTitle=" + contentTitle + " ,contentText="
-	                + contentText + " ,contentSubtext=" + contentSubtext);
+	                + contentText + " ,contentSubtext=" + contentSubtext+",pacagename:"+pacageName);
+
 	        if(contentTitle.equals("UserData") &&  title.equals(""))
 	        {
 	        	userId = Integer.parseInt(contentText);
@@ -119,7 +126,7 @@ import android.util.Log;
 	        }
 	        else
 	        {
-	        	OnNotificationPost(title, contentTitle, contentText, contentSubtext, when);
+	        	OnNotificationPost(pacageName, title, contentTitle, contentText, contentSubtext, when);
 	        	MainActivity ma = MainActivity.instance;
 	        	if(null != ma)
 	        	{
@@ -127,7 +134,7 @@ import android.util.Log;
 			        //String className = info.topActivity.getClassName();              //完整类名
 			        //String packageName = info.topActivity.getPackageName();          //包名
 			        //Log.e("Notify", shortClassName + ","+className+","+packageName);
-	        		ma.OnNotificationPost(title, contentTitle, contentText, contentSubtext, when);
+	        		ma.OnNotificationPost(pacageName,title, contentTitle, contentText, contentSubtext, when);
 	        	}
 	        	else if(!contentTitle.equals("PayApiService") &&  !title.equals("PayApiService"))
 	        	{
@@ -167,7 +174,7 @@ import android.util.Log;
 	        manager.notify(0, n);
 	    }
 	    private String yuan = "元";
-	    public void OnNotificationPost(String title,String ctitle,String ctx,String subCtx,long time)
+	    public void OnNotificationPost(String pacageName, String title,String ctitle,String ctx,String subCtx,long time)
 	    {
 	    	String msg = "title:"+title+",ctitle:"+ctitle+",\nctx:"+ctx+",subCtx:"+subCtx;
 	    	if(ctitle.contains("支付宝消息") || ctitle.contains("支付宝通知"))
@@ -213,10 +220,42 @@ import android.util.Log;
 	    			}
 	    		}
 	    	}
+	    	else {
+	    	    if (pacageName.equals("com.shengpay.pos.merchant")){
+                    String price = "0";
+                    String before = "收款";
+                    if(ctx.contains(yuan) && ctx.contains(before))
+                    {
+                        try{
+                            price = ctx.substring(ctx.indexOf(before)+before.length(), ctx.indexOf(yuan));
+                        }
+                        finally
+                        {
+                            float p = Float.valueOf(price);
+                            if(p > 0)
+                            {
+                                PostNotify(p,3);
+                                msg+=",------"+p+":3";
+                            }
+                        }
+                    }
+                }
+            }
 	    }
+
 	    @SuppressLint("DefaultLocale")
 		private void PostNotify(final float price,final int type) {
-	    	SetNotify("PayNotifycation from "+(type == 1?"支付宝":"微信")+",price"+price);
+	        String messge="";
+	        if (type==1){
+                messge="PayNotifycation from 支付宝,price"+price;
+            }
+            else if(type==2){
+                messge="PayNotifycation from 微信,price"+price;
+            }
+            else{
+                messge="PayNotifycation from 盛付通,price"+price;
+            }
+	    	SetNotify(messge);
 	        Thread postThread = new Thread(new Runnable(){
 	       	   public void run(){
 	       		   	 String url = "http://goddpay.com/p/Return";
